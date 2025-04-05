@@ -1,11 +1,12 @@
 import { jsPDF } from 'jspdf';
 import 'jspdf-autotable';
-import { Detalhamento } from '../store/calculadoraStore';
+import type { Detalhamento } from '../store/calculadoraStore';
 
 // Adicionando o tipo para o jsPDF com autoTable
 declare module 'jspdf' {
   interface jsPDF {
-    autoTable: (options: any) => jsPDF;
+    autoTable: (options: { startY?: number; head: string[][]; body: (string | number)[][]; theme?: string; headStyles?: { fillColor: number[]; textColor: number[] } }) => jsPDF;
+    lastAutoTable: { finalY: number };
   }
 }
 
@@ -62,7 +63,7 @@ export function exportarCalculoPDF(
   });
 
   // Total
-  const finalY = (doc as any).lastAutoTable.finalY + 10;
+  const finalY = doc.lastAutoTable.finalY + 10;
   doc.setFontSize(16);
   doc.setTextColor(0, 51, 153);
   doc.text(`VALOR TOTAL: R$ ${valorTotal.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`, 105, finalY, { align: 'center' });

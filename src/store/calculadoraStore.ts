@@ -128,4 +128,6 @@ const useCalculadoraStore = create<CalculadoraStore>()(
   )
 );
 
+export type { Detalhamento };
+
 export default useCalculadoraStore;

@@ -14,6 +14,7 @@ Calculadora Next.js é uma aplicação web moderna que implementa uma calculador
 - Interface responsiva que se adapta a diferentes dispositivos
 - Tema claro/escuro
 - Histórico de operações
+- Exportação de cálculos para PDF
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -22,6 +23,7 @@ Calculadora Next.js é uma aplicação web moderna que implementa uma calculador
 - [Tailwind CSS](https://tailwindcss.com/) - Framework CSS para estilização
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html) - Para gerenciamento de estado
 - [Geist Font](https://vercel.com/font) - Família de fontes da Vercel
+- [jsPDF](https://github.com/parallax/jsPDF) - Geração de documentos PDF no cliente
 
 ## 🔧 Instalação e Execução
 
