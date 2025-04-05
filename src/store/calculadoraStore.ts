@@ -123,7 +123,7 @@ const useCalculadoraStore = create<CalculadoraStore>()(
       limparHistorico: () => set({ historico: [] })
     }),
     {
-      name: 'calculadora-storage'
+      name: 'calculadora-storage' // Esta é a chave usada no localStorage
     }
   )
 );

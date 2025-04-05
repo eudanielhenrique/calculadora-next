@@ -1,8 +1,9 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import useCalculadoraStore from '../store/calculadoraStore';
-import { FaCalculator, FaMoneyBillWave, FaCarAlt, FaFileInvoiceDollar, FaCheckCircle, FaSave } from 'react-icons/fa';
+import Link from 'next/link';
+import { FaCalculator, FaMoneyBillWave, FaCarAlt, FaFileInvoiceDollar, FaCheckCircle, FaSave, FaHistory } from 'react-icons/fa';
 
 const Calculadora = () => {
   const {
@@ -19,6 +20,8 @@ const Calculadora = () => {
     calcularTotal,
     salvarCalculoAtual
   } = useCalculadoraStore();
+  
+  const [mensagemSucesso, setMensagemSucesso] = useState<string | null>(null);
 
   useEffect(() => {
     if (valorNota > 0) {
@@ -30,16 +33,30 @@ const Calculadora = () => {
     e.preventDefault();
     if (valorNota > 0) {
       salvarCalculoAtual();
+      setMensagemSucesso('Cálculo salvo com sucesso!');
+      
+      // Remove a mensagem após 3 segundos
+      setTimeout(() => {
+        setMensagemSucesso(null);
+      }, 3000);
     }
   };
 
   return (
     <div className="max-w-3xl mx-auto p-8 bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl transition-all duration-300 hover:shadow-2xl my-8">
-      <div className="flex items-center mb-6 border-b pb-4 border-gray-200">
-        <FaCalculator className="text-3xl text-blue-600 mr-3" />
-        <h2 className="text-2xl font-bold text-gray-800 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-          Calculadora de Taxas
-        </h2>
+      <div className="flex items-center justify-between mb-6 border-b pb-4 border-gray-200">
+        <div className="flex items-center">
+          <FaCalculator className="text-3xl text-blue-600 mr-3" />
+          <h2 className="text-2xl font-bold text-gray-800 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            Calculadora de Taxas
+          </h2>
+        </div>
+        <Link 
+          href="/historico"
+          className="flex items-center text-blue-600 hover:text-blue-800 transition-colors text-sm"
+        >
+          <FaHistory className="mr-1" /> Ver histórico
+        </Link>
       </div>
       
       <form onSubmit={handleSubmit} className="space-y-7">
@@ -214,6 +231,13 @@ const Calculadora = () => {
             </div>
           </div>
         </div>
+
+        {mensagemSucesso && (
+          <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg flex items-center justify-center animate-fade-in-out">
+            <FaCheckCircle className="mr-2" />
+            {mensagemSucesso}
+          </div>
+        )}
 
         <button
           type="submit"

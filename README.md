@@ -1,24 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Calculadora Next.js
 
-## Getting Started
+![Calculadora](./public/calculator-preview.png)
 
-First, run the development server:
+## 📋 Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Calculadora Next.js é uma aplicação web moderna que implementa uma calculadora com interface intuitiva e responsiva. Este projeto foi desenvolvido utilizando as mais recentes tecnologias web, com foco em desempenho e experiência do usuário.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ✨ Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Operações matemáticas básicas (adição, subtração, multiplicação, divisão)
+- Cálculos com porcentagem
+- Suporte para números decimais
+- Interface responsiva que se adapta a diferentes dispositivos
+- Tema claro/escuro
+- Histórico de operações
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Tecnologias Utilizadas
+
+- [Next.js 14](https://nextjs.org/) - Framework React com renderização do lado do servidor
+- [TypeScript](https://www.typescriptlang.org/) - Tipagem estática para JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS para estilização
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html) - Para gerenciamento de estado
+- [Geist Font](https://vercel.com/font) - Família de fontes da Vercel
+
+## 🔧 Instalação e Execução
+
+### Pré-requisitos
+
+- Node.js 18.x ou superior
+- npm, yarn, pnpm ou bun
+
+### Passo a passo
+
+1. Clone o repositório
+   ```bash
+   git clone https://github.com/seu-usuario/calculadora-next.git
+   cd calculadora-next
+   ```
+
+2. Instale as dependências
+   ```bash
+   npm install
+   # ou
+   yarn install
+   # ou
+   pnpm install
+   # ou
+   bun install
+   ```
+
+3. Execute o servidor de desenvolvimento
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   # ou
+   pnpm dev
+   # ou
+   bun dev
+   ```
+
+4. Acesse [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+
+## 📁 Estrutura do Projeto
 
 ## Learn More
 
