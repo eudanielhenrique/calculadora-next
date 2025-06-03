@@ -18,14 +18,7 @@ export const metadata: Metadata = {
     title: 'Calculadora de Emplacamento de Carros - Grátis e Precisa',
     description: 'Calcule todas as taxas de emplacamento do seu carro: IPVA, documentação, transferência e muito mais.',
     url: '/',
-    images: [
-      {
-        url: '/calculator-preview.png', // Usando imagem existente como fallback
-        width: 1200,
-        height: 630,
-        alt: 'Calculadora de Emplacamento para Carros',
-      },
-    ],
+    // Removendo imagens temporariamente até resolver problema de deploy
   },
   twitter: {
     title: 'Calculadora de Emplacamento de Carros',

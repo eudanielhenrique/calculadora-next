@@ -46,21 +46,14 @@ export const metadata: Metadata = {
     title: 'Calculadora de Emplacamento - Carros e Motos',
     description: 'Calculadora gratuita para estimativas precisas de taxas de emplacamento de carros e motos. Calcule IPVA, taxa de emplacamento, documentação e muito mais.',
     siteName: 'Calculadora de Emplacamento',
-    images: [
-      {
-        url: '/calculator-preview.png',
-        width: 1200,
-        height: 630,
-        alt: 'Calculadora de Emplacamento - Interface da aplicação',
-      },
-    ],
+    // Removendo imagens temporariamente até resolver o problema de deploy
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Calculadora de Emplacamento - Carros e Motos',
     description: 'Calculadora gratuita para estimativas precisas de taxas de emplacamento. Calcule IPVA, documentação e taxas.',
-    images: ['/calculator-preview.png'],
     creator: '@danielhenrique',
+    // Removendo imagens temporariamente
   },
   robots: {
     index: true,

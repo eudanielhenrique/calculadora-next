@@ -18,14 +18,7 @@ export const metadata: Metadata = {
     title: 'Calculadora de Emplacamento de Motos - Especializada',
     description: 'Calculadora específica para motos com venda de estoque. Calcule IPVA, taxas e documentação de motocicletas.',
     url: '/motos',
-    images: [
-      {
-        url: '/calculator-preview.png', // Usando imagem existente como fallback
-        width: 1200,
-        height: 630,
-        alt: 'Calculadora de Emplacamento para Motocicletas',
-      },
-    ],
+    // Removendo imagens temporariamente até resolver problema de deploy
   },
   twitter: {
     title: 'Calculadora de Emplacamento de Motos',
