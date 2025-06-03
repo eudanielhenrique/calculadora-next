@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css"; // Certifique-se de que este import está presente
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +30,7 @@ export default function RootLayout({
         <header className="bg-white border-b border-gray-200">
           <div className="max-w-6xl mx-auto py-3 px-4 flex justify-between items-center">
             <div>
-              <h1 className="text-lg font-semibold text-blue-600">Calculadora de Emplacamento</h1>
+              <h1 className="text-lg font-semibold text-gray-800">Calculadora de Emplacamento</h1>
             </div>
           </div>
         </header>
@@ -45,7 +45,7 @@ export default function RootLayout({
               href="https://github.com/eudanielhenrique" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 font-medium hover:underline transition-colors"
+              className="text-gray-700 hover:text-gray-900 font-medium hover:underline transition-colors"
             >
               Daniel H
             </a>

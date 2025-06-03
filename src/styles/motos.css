@@ -1,0 +1,42 @@
+/* Estilos específicos para a calculadora de motos */
+.calculadora-motos {
+  --primary-color: #ea580c; /* orange-600 */
+  --primary-hover: #c2410c; /* orange-700 */
+  --primary-light: #fff7ed; /* orange-50 */
+  --primary-border: #fb923c; /* orange-400 */
+  --primary-text: #ea580c; /* orange-600 */
+  --secondary-color: #dc2626; /* red-600 para gradientes */
+}
+
+.calculadora-motos .primary-gradient {
+  background: linear-gradient(to right, #ea580c, #dc2626);
+}
+
+.calculadora-motos .primary-gradient-hover:hover {
+  background: linear-gradient(to right, #c2410c, #b91c1c);
+}
+
+.calculadora-motos .primary-bg {
+  background-color: var(--primary-light);
+}
+
+.calculadora-motos .primary-border {
+  border-color: var(--primary-border);
+}
+
+.calculadora-motos .primary-text {
+  color: var(--primary-text);
+}
+
+.calculadora-motos .primary-hover:hover {
+  color: var(--primary-hover);
+}
+
+.calculadora-motos .focus-ring:focus {
+  ring-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.calculadora-motos .checkbox-radio {
+  accent-color: var(--primary-color);
+}

@@ -1,0 +1,41 @@
+/* Estilos específicos para a calculadora de carros */
+.calculadora-carros {
+  --primary-color: #2563eb; /* blue-600 */
+  --primary-hover: #1d4ed8; /* blue-700 */
+  --primary-light: #eff6ff; /* blue-50 */
+  --primary-border: #60a5fa; /* blue-400 */
+  --primary-text: #2563eb; /* blue-600 */
+}
+
+.calculadora-carros .primary-gradient {
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+}
+
+.calculadora-carros .primary-gradient-hover:hover {
+  background: linear-gradient(to right, #1d4ed8, #1e40af);
+}
+
+.calculadora-carros .primary-bg {
+  background-color: var(--primary-light);
+}
+
+.calculadora-carros .primary-border {
+  border-color: var(--primary-border);
+}
+
+.calculadora-carros .primary-text {
+  color: var(--primary-text);
+}
+
+.calculadora-carros .primary-hover:hover {
+  color: var(--primary-hover);
+}
+
+.calculadora-carros .focus-ring:focus {
+  ring-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.calculadora-carros .checkbox-radio {
+  accent-color: var(--primary-color);
+}
