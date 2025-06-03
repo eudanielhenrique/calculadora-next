@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import useCalculadoraStore from '../../store/calculadoraStore';
-import Link from 'next/link';
-import { FaMoneyBillWave, FaMotorcycle, FaFileInvoiceDollar, FaCheckCircle, FaSave, FaHistory } from 'react-icons/fa';
+import { FaMoneyBillWave, FaMotorcycle, FaFileInvoiceDollar, FaCheckCircle, FaSave } from 'react-icons/fa';
 import '../../styles/motos.css';
 
 const CalculadoraMotos = () => {
