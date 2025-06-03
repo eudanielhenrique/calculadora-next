@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: '/',
     images: [
       {
-        url: '/carros-preview.png',
+        url: '/calculator-preview.png', // Usando imagem existente como fallback
         width: 1200,
         height: 630,
         alt: 'Calculadora de Emplacamento para Carros',
