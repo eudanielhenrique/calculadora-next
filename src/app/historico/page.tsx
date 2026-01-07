@@ -29,7 +29,7 @@ export default function Historico() {
         </Link>
       </div>
 
-      <div className="mb-6 bg-white p-4 rounded-lg shadow-md">
+      <div className="mb-6 bg-white p-4 rounded-lg border border-gray-200">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div className="relative flex-grow">
             <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
@@ -70,7 +70,7 @@ export default function Historico() {
       {historicoFiltrado.length > 0 ? (
         <div className="space-y-4">
           {historicoFiltrado.map((calculo) => (
-            <div key={calculo.id} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div key={calculo.id} className="bg-white p-6 rounded-lg border border-gray-200">
               <div className="flex justify-between mb-4">
                 <div>
                   <h2 className="text-lg font-semibold text-gray-800">
@@ -111,7 +111,7 @@ export default function Historico() {
           ))}
         </div>
       ) : (
-        <div className="bg-white p-8 rounded-lg shadow text-center">
+        <div className="bg-white p-8 rounded-lg border border-gray-200 text-center">
           <p className="text-lg text-gray-600">Nenhum cálculo encontrado</p>
           <p className="text-sm text-gray-500 mt-2">
             {historico.length > 0 

@@ -1,10 +1,10 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
-const TAXA_EMPLACAMENTO = 435;
-const VALOR_PLACA = 290;
-const VALOR_HONORARIOS = 200;
-const VALOR_TAXA_ALIENACAO = 140;
+export const TAXA_EMPLACAMENTO = 455;
+export const VALOR_PLACA = 300;
+export const VALOR_HONORARIOS = 200;
+export const VALOR_TAXA_ALIENACAO = 145;
 
 interface CalculoSalvo {
   id: string;
