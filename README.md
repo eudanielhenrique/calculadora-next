@@ -1,82 +1,106 @@
-# Calculadora Next.js
+# 🚗 Calculadora de Emplacamento
 
-![Calculadora](./public/calculator-preview.png)
+![Preview do Projeto](./public/calculator-preview.png)
 
 ## 📋 Sobre o Projeto
 
-Calculadora Next.js é uma aplicação web moderna que implementa uma calculadora com interface intuitiva e responsiva. Este projeto foi desenvolvido utilizando as mais recentes tecnologias web, com foco em desempenho e experiência do usuário.
+**Calculadora de Emplacamento** é uma aplicação web completa e moderna desenvolvida para facilitar o cálculo de taxas de primeiro emplacamento, IPVA e documentação para **Carros** e **Motos**.
 
-### ✨ Funcionalidades
+O projeto foi construído pensando na experiência do usuário, oferecendo:
+- Cálculos precisos baseados em taxas reais (IPVA, honorários, placas, etc).
+- Diferenciação automática entre Venda Direta e Estoque.
+- Geração de orçamentos em PDF profissionais.
+- Histórico local de cálculos.
+- Funcionalidade completa Offline (PWA).
 
-- Operações matemáticas básicas (adição, subtração, multiplicação, divisão)
-- Cálculos com porcentagem
-- Suporte para números decimais
-- Interface responsiva que se adapta a diferentes dispositivos
-- Tema claro/escuro
-- Histórico de operações
-- Exportação de cálculos para PDF
+## ✨ Funcionalidades
+
+### 🚙 Carros
+- Cálculo de IPVA (2% Venda Direta / 1% Venda Estoque).
+- Taxas configuráveis (Placa, Honorários, Alienação).
+- Detalhamento mês a mês do IPVA proporcional.
+
+### 🏍️ Motos
+- Interface dedicada (Temática e regras específicas).
+- Regra de negócio automática (Sempre Venda Estoque).
+- Valores de taxas ajustados para motocicletas.
+
+### 🛠️ Recursos Gerais
+- **Histórico**: Salva automaticamente seus cálculos no navegador.
+- **Exportação PDF**: Gere um documento profissional com um clique.
+- **PWA (Progressive Web App)**: Instale o app no seu celular ou desktop.
+- **SEO Otimizado**: Metadados avançados, Schema.org e Open Graph.
+- **Design Responsivo**: Interface "Flat" moderna e adaptável a qualquer tela.
+- **Modo Offline**: Funciona mesmo sem internet após o primeiro acesso.
 
 ## 🚀 Tecnologias Utilizadas
 
-- [Next.js 14](https://nextjs.org/) - Framework React com renderização do lado do servidor
-- [TypeScript](https://www.typescriptlang.org/) - Tipagem estática para JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS para estilização
-- [React Hooks](https://reactjs.org/docs/hooks-intro.html) - Para gerenciamento de estado
-- [Geist Font](https://vercel.com/font) - Família de fontes da Vercel
-- [jsPDF](https://github.com/parallax/jsPDF) - Geração de documentos PDF no cliente
+O projeto utiliza a stack mais moderna do ecossistema React:
+
+- [Next.js 16](https://nextjs.org/) - O framework React para produção.
+- [React 19](https://react.dev/) - Biblioteca para construção de interfaces.
+- [TypeScript](https://www.typescriptlang.org/) - Tipagem estática robusta.
+- [Tailwind CSS](https://tailwindcss.com/) - Estilização utility-first.
+- [Zustand](https://github.com/pmndrs/zustand) - Gerenciamento de estado leve e persistente.
+- [jsPDF](https://github.com/parallax/jsPDF) - Geração de PDFs no client-side.
+- [React Icons](https://react-icons.github.io/react-icons/) - Ícones vetoriais.
 
 ## 🔧 Instalação e Execução
 
 ### Pré-requisitos
-
-- Node.js 18.x ou superior
-- npm, yarn, pnpm ou bun
+- Node.js 18.x ou superior.
 
 ### Passo a passo
 
-1. Clone o repositório
+1. **Clone o repositório**
    ```bash
-   git clone https://github.com/seu-usuario/calculadora-next.git
+   git clone https://github.com/eudanielhenrique/calculadora-next.git
    cd calculadora-next
    ```
 
-2. Instale as dependências
+2. **Instale as dependências**
    ```bash
    npm install
-   # ou
-   yarn install
-   # ou
-   pnpm install
-   # ou
-   bun install
    ```
 
-3. Execute o servidor de desenvolvimento
+3. **Configure as variáveis de ambiente (Opcional)**
+   Crie um arquivo `.env.local` na raiz:
+   ```env
+   NEXT_PUBLIC_GA_MEASUREMENT_ID=G-SEU-ID-AQUI
+   NEXT_PUBLIC_SITE_URL=http://localhost:3000
+   ```
+
+4. **Execute o projeto**
    ```bash
    npm run dev
-   # ou
-   yarn dev
-   # ou
-   pnpm dev
-   # ou
-   bun dev
    ```
+   Acesse [http://localhost:3000](http://localhost:3000).
 
-4. Acesse [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+## 📱 PWA (Instalação)
 
-## 📁 Estrutura do Projeto
+Este projeto é um Progressive Web App. Você pode instalá-lo:
+- **No Chrome/Edge**: Clique no ícone de instalação na barra de endereço.
+- **No iOS (Safari)**: Toque em "Compartilhar" > "Adicionar à Tela de Início".
+- **No Android**: Toque no menu > "Instalar aplicativo".
 
-## Learn More
+## 🤝 Contribuição
 
-To learn more about Next.js, take a look at the following resources:
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Faça um Fork do projeto
+2. Crie sua Feature Branch (`git checkout -b feature/MinhaFeature`)
+3. Faça o Commit (`git commit -m 'Adiciona: MinhaFeature'`)
+4. Faça o Push (`git push origin feature/MinhaFeature`)
+5. Abra um Pull Request
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👤 Autor
 
-## Deploy on Vercel
+**Daniel H**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- GitHub: [@eudanielhenrique](https://github.com/eudanielhenrique)
+- LinkedIn: [phdanielhenrique](https://www.linkedin.com/in/phdanielhenrique/)
+- Twitter: [@danielhenrique](https://twitter.com/danielhenrique)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Desenvolvido com 💙 por Daniel H.
