@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import StructuredData from "../components/StructuredData";
 import GoogleAnalytics from "../components/GoogleAnalytics";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +16,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: "#ffffff",
+};
+
 export const metadata: Metadata = {
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Emplacamento",
+  },
   title: {
     default: "Calculadora de Emplacamento - Daniel H",
     template: "%s | Calculadora de Emplacamento"
@@ -86,6 +101,7 @@ export const metadata: Metadata = {
     shortcut: '/icon/3d-fluency-32.png',
     apple: '/icon/3d-fluency-96.png',
   },
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
@@ -105,30 +121,13 @@ export default function RootLayout({
           description="Calculadora gratuita para emplacamento de carros e motos"
           url="https://calculadora-emplacamento.vercel.app"
         />
-        <header className="bg-white border-b border-gray-200">
-          <div className="max-w-6xl mx-auto py-3 px-4 flex justify-between items-center">
-            <div>
-              <h1 className="text-lg font-semibold text-gray-800">Calculadora de Emplacamento</h1>
-            </div>
-          </div>
-        </header>
+        <Header />
         
         <div className="flex-grow">
           {children}
         </div>
         
-        <footer className="py-4 text-center text-sm text-gray-600 mt-8 border-t border-gray-200 bg-white">
-          <p>
-            Desenvolvido por <a 
-              href="https://github.com/eudanielhenrique" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-700 hover:text-gray-900 font-medium hover:underline transition-colors"
-            >
-              Daniel H
-            </a>
-          </p>
-        </footer>
+        <Footer />
       </body>
     </html>
   );
