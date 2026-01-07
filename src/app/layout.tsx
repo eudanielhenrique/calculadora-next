@@ -77,6 +77,15 @@ export const metadata: Metadata = {
       }),
     },
   },
+  icons: {
+    icon: [
+      { url: '/icon/3d-fluency-16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icon/3d-fluency-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon/3d-fluency-96.png', sizes: '96x96', type: 'image/png' },
+    ],
+    shortcut: '/icon/3d-fluency-32.png',
+    apple: '/icon/3d-fluency-96.png',
+  },
 };
 
 export default function RootLayout({

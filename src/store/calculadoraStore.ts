@@ -63,6 +63,11 @@ const useCalculadoraStore = create<CalculadoraStore>()(
       calcularTotal: () => {
         const { valorNota, tipoVenda, taxaAlienacao } = get();
         
+        if (valorNota <= 0) {
+          set({ valorTotal: 0, detalhamento: null });
+          return;
+        }
+
         // Cálculo da taxa anual (IPVA)
         // Para venda direta é 2% do valor da nota, para estoque é 1%
         const percentualTaxa = tipoVenda === 'direta' ? 0.02 : 0.01;

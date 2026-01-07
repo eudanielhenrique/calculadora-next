@@ -64,7 +64,7 @@ const Calculadora = () => {
       
       <form onSubmit={handleSubmit} className="space-y-7">
         <div className="space-y-5">
-          <div className="transition-all duration-200 hover:scale-[1.01]">
+          <div>
             <label htmlFor="valorNota" className="flex items-center text-sm font-semibold text-gray-700 mb-2">
               <FaMoneyBillWave className="mr-2 text-green-600" />
               Valor da Nota Fiscal
@@ -89,7 +89,7 @@ const Calculadora = () => {
             </div>
           </div>
 
-          <div className="transition-all duration-200 hover:scale-[1.01]">
+          <div>
             <label className="flex items-center text-sm font-semibold text-gray-700 mb-3">
               <FaCarAlt className="mr-2 text-blue-600" />
               Tipo de Venda
